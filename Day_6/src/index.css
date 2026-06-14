@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body{
+  background-color: black;
+}
+.box,.box1{
+  height: 300px;
+  width: 300px;
+  background-color: red;
+}
+.box1{
+  background-color: burlywood;
+}
