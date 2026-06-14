@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, 
+body
+{
+  background-color: black;
+  color: white;
+}
+
+#app{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app .title h1{
+  font-size: 10rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+}
+
+.titleword{
+  overflow: hidden;
+}
+.titleChars{
+  overflow: hidden;
+}
+
+.box{
+  height: 200px;
+  width: 200px;
+  background-color: red;
+}
+
+
+
+.imageGallery{
+  height: 30%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 20px;
+}
+.imageGallery img{
+  height: 40%;
+  width: 40%;
+  object-fit: cover;
+}
+.imageShow{
+  height: 70%;
+  width: 60%;
+  background-color: red;
+}
+.imageShow img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
