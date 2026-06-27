@@ -1,0 +1,42 @@
+A shader is a small program that runs on a computer's GPU (Graphics Processing Unit) to control how graphics are drawn on the screen.
+
+Shaders are used in video games, 3D applications, simulations, and visual effects to determine things like:
+
+How objects are positioned
+How surfaces are colored
+How lighting and shadows appear
+Reflections, transparency, and special effects
+Common Types of Shaders
+Vertex Shader
+Runs once for each vertex (corner point of a 3D model).
+Determines where the vertex appears on the screen.
+Fragment (Pixel) Shader
+Runs for each pixel.
+Calculates the final color, lighting, textures, and effects.
+Geometry Shader
+Can create or modify geometry between the vertex and fragment stages.
+Compute Shader
+Used for general-purpose GPU computations, not just graphics.
+Simple Example
+
+A fragment shader that colors every pixel red:
+
+#version 330 core
+
+out vec4 FragColor;
+
+void main()
+{
+    FragColor = vec4(1.0, 0.0, 0.0, 1.0); // Red
+}
+Why Use Shaders?
+
+Without shaders, graphics would look flat and unrealistic. Shaders enable:
+
+Realistic lighting
+Shadows
+Water effects
+Particle systems
+Skin, metal, glass, and other material appearances
+
+Think of a shader as a recipe that tells the GPU how to draw each part of an image. The GPU executes that recipe thousands or millions of times in parallel, making modern graphics fast and visually impressive.
